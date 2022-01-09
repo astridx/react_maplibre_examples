@@ -1,4 +1,5 @@
 import React from 'react';
+import maplibregl from 'maplibre-gl';
 
 const appName = "app";
 
