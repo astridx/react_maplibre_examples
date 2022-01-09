@@ -2,6 +2,12 @@ import React from "react";
 
 const appName = "app";
 
+function showDate(mode = "onlyYear") {
+  const d = new Date();
+  if (mode === "onlyYear") return d.getFullYear();
+  else return d.getMonth() + 1 + "-" + d.getFullYear();
+}
+
 function App(props) {
   let subtitle = "";
   if (props) {
@@ -13,6 +19,8 @@ function App(props) {
       <h1>React Maplibre Map</h1>
       <h2>{subtitle}</h2>
       <small>{appName}</small>
+      <br />
+      <small>{showDate("monthAndYear")}</small>
     </div>
   );
 }
