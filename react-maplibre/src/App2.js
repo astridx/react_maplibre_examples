@@ -1,7 +1,5 @@
 import React from 'react';
 
-const appName = "app";
-
 function App(props) {
   let subtitle = '';
   if (props) {
@@ -11,7 +9,6 @@ function App(props) {
     <div>
       <h1>React Maplibre Map</h1>
       <h2>{subtitle}</h2>
-      <small>{appName}</small>
     </div>
   );
 }
