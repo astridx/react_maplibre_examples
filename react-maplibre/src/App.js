@@ -11,6 +11,8 @@ function App(props) {
   return (
     <div>
       <h1>React Maplibre Map</h1>
+      <label htmlFor="search">Suche: </label>
+      <input id="search" type="text" />
       <ReactMapGL
         {...viewport}
         mapStyle="https://demotiles.maplibre.org/style.json"
