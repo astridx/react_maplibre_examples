@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function App(props) {
-  let subtitle = '';
+  let subtitle = "";
   if (props) {
-    subtitle = "Open-source mapping libraries for developers of web and mobile applications.";
+    subtitle =
+      "Open-source mapping libraries for developers of web and mobile applications.";
   }
   return (
     <div>
